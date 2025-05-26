@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Редагування профілю | ВелоСвіт</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="container">
+                <h1 class="site-title">ВелоСвіт</h1>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="cart.html">Кошик</a></li>
+                        <li><a href="profile.html">Профіль</a></li>
+                        <li><a href="login.html">Вихід</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Контент -->
+        <main class="main-content">
+            <div class="container">
+                <section class="edit-profile-section">
+                    <h2>Редагування профілю</h2>
+
+                    <form action="#" method="POST" class="profile-form">
+                        <div class="form-group">
+                            <label for="name">Ім’я:</label>
+                            <input type="text" id="name" name="name" value="Іван Шевченко" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" value="ivan@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" value="+380 00 111 22 33" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Новий пароль:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Зберегти зміни</button>
+                            <a href="profile.html" class="btn btn-outline">Скасувати</a>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2025 ВелоСвіт. Усі права захищено.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
