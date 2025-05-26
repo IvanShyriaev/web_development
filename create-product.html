@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Додати товар | ВелоСвіт</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="container">
+                <h1 class="site-title">ВелоСвіт — Адмін</h1>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="admin-panel.html">Адмін</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="profile.html">Профіль</a></li>
+                        <li><a href="login.html">Вихід</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Форма створення товару -->
+        <main class="main-content">
+            <div class="container">
+                <section class="create-product-section">
+                    <h2>Додати новий велосипед</h2>
+
+                    <form action="#" method="POST" enctype="multipart/form-data" class="product-form">
+
+                        <div class="form-group">
+                            <label for="name">Назва товару:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Опис товару:</label>
+                            <textarea id="description" name="description" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="price">Ціна (₴):</label>
+                            <input type="number" id="price" name="price" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stock">Кількість на складі:</label>
+                            <input type="number" id="stock" name="stock" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category_id">Категорія:</label>
+                            <select id="category_id" name="category_id" required>
+                                <option value="">Оберіть категорію</option>
+                                <option value="1">Гірські</option>
+                                <option value="2">Міські</option>
+                                <option value="3">Дитячі</option>
+                                <option value="4">Електро</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="image">Зображення товару:</label>
+                            <input type="file" id="image" name="image" accept="image/*" required>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Додати товар</button>
+                            <a href="admin-panel.html" class="btn btn-outline">Назад</a>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2025 ВелоСвіт. Усі права захищено.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

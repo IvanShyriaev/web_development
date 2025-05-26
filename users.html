@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Користувачі | ВелоСвіт</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Шапка -->
+        <header class="site-header">
+            <div class="container">
+                <h1 class="site-title">ВелоСвіт — Адмін</h1>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="admin-panel.html">Адмін</a></li>
+                        <li><a href="profile.html">Профіль</a></li>
+                        <li><a href="login.html">Вихід</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Таблиця користувачів -->
+        <main class="main-content">
+            <div class="container">
+                <h2>Список користувачів</h2>
+
+                <table class="user-table">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ім’я</th>
+                        <th>Email</th>
+                        <th>Телефон</th>
+                        <th>Роль</th>
+                        <th>Дії</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Іван Шевченко</td>
+                        <td>ivan@example.com</td>
+                        <td>+380671234567</td>
+                        <td>Адмін</td>
+                        <td>
+                            <a href="edit-user.html" class="btn btn-outline">Редагувати</a>
+                            <button class="btn btn-danger">Видалити</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Марія Коваль</td>
+                        <td>maria@example.com</td>
+                        <td>+380501112233</td>
+                        <td>Клієнт</td>
+                        <td>
+                            <a href="edit-user.html" class="btn btn-outline">Редагувати</a>
+                            <button class="btn btn-danger">Видалити</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="form-actions" style="margin-top: 20px; text-align: right;">
+                    <a href="create-user.html" class="btn btn-primary">Додати користувача</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2025 ВелоСвіт. Усі права захищено.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

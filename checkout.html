@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Оформлення замовлення | ВелоСвіт</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">ВелоСвіт</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="profile.html">Профіль</a></li>
+                <li><a href="login.html">Вхід</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Оформлення замовлення -->
+<main class="main-content">
+    <div class="container">
+        <section class="checkout-section">
+            <h2>Оформлення замовлення</h2>
+
+            <form action="#" method="POST" class="checkout-form">
+                <div class="form-group">
+                    <label for="fullname">Ім’я та прізвище:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Адреса доставки:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Коментар до замовлення (необов’язково):</label>
+                    <textarea id="note" name="note" rows="2"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Підтвердити замовлення</button>
+                    <a href="cart.html" class="btn btn-outline">Назад до кошика</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<!-- Футер -->
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 ВелоСвіт. Усі права захищено.</p>
+    </div>
+</footer>
+
+</body>
+</html>
