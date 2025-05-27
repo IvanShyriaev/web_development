@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+
+<script type="module" src="js/create-product.js"></script>
+
     <div class="page-wrapper">
         <!-- Шапка -->
         <header class="site-header">
@@ -28,7 +31,7 @@
         <main class="main-content">
             <div class="container">
                 <section class="create-product-section">
-                    <h2>Додати новий велосипед</h2>
+                    <h2>Додати новий товар</h2>
 
                     <form action="#" method="POST" enctype="multipart/form-data" class="product-form">
 
@@ -44,7 +47,7 @@
 
                         <div class="form-group">
                             <label for="price">Ціна (₴):</label>
-                            <input type="number" id="price" name="price" required>
+                            <input type="number" id="price" name="price" step="0.01" required>
                         </div>
 
                         <div class="form-group">
@@ -55,23 +58,21 @@
                         <div class="form-group">
                             <label for="category_id">Категорія:</label>
                             <select id="category_id" name="category_id" required>
-                                <option value="">Оберіть категорію</option>
-                                <option value="1">Гірські</option>
-                                <option value="2">Міські</option>
-                                <option value="3">Дитячі</option>
-                                <option value="4">Електро</option>
+
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="image">Зображення товару:</label>
-                            <input type="file" id="image" name="image" accept="image/*" required>
+                            <input type="file" id="image" name="image" accept="image/*">
                         </div>
 
                         <div class="form-actions">
                             <button type="submit" class="btn btn-primary">Додати товар</button>
                             <a href="admin-panel.html" class="btn btn-outline">Назад</a>
                         </div>
+
+                        <div id="message-box" class="message-box"></div>
 
                     </form>
                 </section>
