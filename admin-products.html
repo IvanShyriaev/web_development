@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Товари | ВелоСвіт</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div class="page-wrapper">
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">ВелоСвіт — Адмін</h1>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="admin-panel.html">Адмін</a></li>
+          <li><a href="profile.html">Профіль</a></li>
+          <li><a href="login.html">Вихід</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Таблиця товарів -->
+  <main class="main-content">
+    <div class="container">
+      <h2>Список товарів</h2>
+
+      <table class="user-table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Назва</th>
+          <th>Ціна</th>
+          <th>Кількість</th>
+          <th>Категорія</th>
+          <th>Дії</th>
+        </tr>
+        </thead>
+        <tbody id="product-table-body">
+
+        </tbody>
+      </table>
+
+      <div class="form-actions" style="margin-top: 20px; text-align: right;">
+        <a href="create-product.html" class="btn btn-primary">Додати товар</a>
+      </div>
+    </div>
+  </main>
+
+  <div id="confirm-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Ви впевнені, що хочете видалити товар?</p>
+      <div class="modal-actions">
+        <button id="confirm-yes" class="btn btn-danger">Так</button>
+        <button id="confirm-no" class="btn btn-outline">Скасувати</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="message-box" class="message-box" style="display: none;"></div>
+
+
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ВелоСвіт. Усі права захищено.</p>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="js/admin-products.js"></script>
+
+
+
+
+</body>
+</html>
