@@ -1,0 +1,7 @@
+@mixin responsive($bp) {
+  @if $bp == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}

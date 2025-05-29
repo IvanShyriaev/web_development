@@ -44,3 +44,20 @@ export async function getCategories() {
     if (!response.ok) throw new Error(`Помилка: ${response.status}`);
     return response.json();
 }
+
+export async function loginUser(credentials) {
+    const response = await fetch(`${BASE_URL}login/`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(credentials)
+    });
+
+    if (!response.ok) {
+        throw new Error('Помилка авторизації');
+    }
+    return response.json();
+}
+
+export function logoutUser() {
+    localStorage.removeItem('token');
+}
