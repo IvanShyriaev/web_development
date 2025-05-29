@@ -32,7 +32,7 @@ function App() {
     };
 
     return (
-        <Router>
+
             <div className="page-wrapper">
                 <Header />
                 <main className="main-content">
@@ -52,7 +52,7 @@ function App() {
                 </main>
                 <Footer />
             </div>
-        </Router>
+
     );
 }
 
