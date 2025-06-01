@@ -12,7 +12,11 @@ import AdminUsersPage from './pages/AdminUsersPage.jsx';
 import CreateUserPage from './pages/CreateUserPage.jsx';
 import EditUserPage from './pages/EditUserPage.jsx';
 import LoginPage from './pages/LoginPage';
+import CatalogPage from './pages/CatalogPage';
+import ProductPage from './pages/ProductPage.jsx';
 import axios from 'axios';
+import CartPage from './pages/CartPage.jsx';
+import CheckoutPage from './pages/CheckoutPage.jsx';
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
@@ -47,7 +51,10 @@ function App() {
                         <Route path="/admin-users" element={<AdminUsersPage />} />
                         <Route path="/create-user" element={<CreateUserPage />} />
                         <Route path="/edit-user/:id" element={<EditUserPage />} />
-                        <Route path="*" element={<Navigate to="/" />} />
+                        <Route path="/catalog" element={<CatalogPage />} />
+                        <Route path="/product/:id" element={<ProductPage />} />
+                        <Route path="/cart" element={<CartPage />} />
+                        <Route path="/checkout" element={<CheckoutPage />} />
                     </Routes>
                 </main>
                 <Footer />
