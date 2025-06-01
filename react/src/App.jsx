@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import MainPage from './pages/MainPage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx'; // Додай свою сторінку профілю
