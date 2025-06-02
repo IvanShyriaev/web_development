@@ -3,7 +3,7 @@ import { useCart } from '../context/CartContext';
 
 export default function ProductCard({ product }) {
     const imagePath = `/web_development/images/${product.id}.jpg`;
-    const fallbackImage = '/web_development/images/default.jpg'; // <-- без /public/
+    const fallbackImage = '/web_development/images/default.jpg';
     const { addToCart } = useCart();
 
     return (

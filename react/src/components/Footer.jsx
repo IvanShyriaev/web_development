@@ -3,6 +3,7 @@ export default function Footer() {
         <footer className="site-footer">
             <div className="container">
                 <p>&copy; 2025 ВелоСвіт — твій магазин велосипедів. Усі права захищено.</p>
+                <p> Made by Shyriaiev Ivan </p>
             </div>
         </footer>
     );

@@ -20,12 +20,7 @@ export default function CheckoutPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!form.name || !form.address || !form.phone) {
-            alert('Будь ласка, заповніть всі поля');
-            return;
-        }
 
-        // Тут міг би бути запит на сервер...
         alert('Замовлення оформлено!');
         clearCart();
         navigate('/');
@@ -47,7 +42,7 @@ export default function CheckoutPage() {
                                 </li>
                             ))}
                         </ul>
-                        <p><strong>Загальна сума:</strong> ₴{total.toFixed(2)}</p>
+                        <p>Загальна сума: ₴{total.toFixed(2)}</p>
 
                         <form onSubmit={handleSubmit} className="checkout-form">
                             <div className="form-group">

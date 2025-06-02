@@ -39,7 +39,14 @@ export default function EditProductPage() {
         }
     };
 
-    if (!product) return <p>Завантаження...</p>;
+    if (!product) {
+        return (
+            <div className="container">
+                {message ? <div className="message-box">{message}</div> : <p>Завантаження...</p>}
+            </div>
+        );
+    }
+
 
     return (
         <div className="container">

@@ -23,16 +23,26 @@ export default function LoginPage() {
 
     return (
         <div className="container">
-            <h2>Вхід</h2>
-            {error && <div className="message-box error">{error}</div>}
             <form onSubmit={handleSubmit} className="product-form">
                 <div className="form-group">
-                    <label>Ім’я користувача:</label>
-                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
+                    <label htmlFor="username">Ім’я користувача:</label>
+                    <input
+                        id="username"
+                        type="text"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        required
+                    />
                 </div>
                 <div className="form-group">
-                    <label>Пароль:</label>
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <label htmlFor="password">Пароль:</label>
+                    <input
+                        id="password"
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
                 </div>
                 <div className="form-actions">
                     <button type="submit" className="btn btn-primary">Увійти</button>
@@ -41,4 +51,3 @@ export default function LoginPage() {
         </div>
     );
 }
-
