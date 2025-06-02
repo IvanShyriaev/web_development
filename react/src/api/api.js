@@ -37,6 +37,8 @@ export async function deleteProduct(productId) {
     if (!response.ok) {
         throw new Error(`Помилка при видаленні товару: ${response.status}`);
     }
+
+    return response.json();
 }
 
 export async function getCategories() {
@@ -125,6 +127,12 @@ export async function updateUser(id, user) {
 }
 
 export async function deleteUser(id) {
-    await fetch(`${BASE_URL}users/${id}/`, { method: 'DELETE' });
+    const res = await fetch(`${BASE_URL}users/${id}/`, { method: 'DELETE' });
+
+    if (!res.ok) {
+        throw new Error('Не вдалося видалити користувача');
+    }
+
+    return res.json();
 }
 

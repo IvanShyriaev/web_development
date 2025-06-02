@@ -50,13 +50,12 @@ export default function ProductPage() {
                             <p className="product-description">
                                 {product.description || 'Опис недоступний.'}
                             </p>
-                            <p><strong>Кількість на складі:</strong> {product.stock}</p>
-                            <p><strong>Категорія:</strong> #{product.category_id}</p>
+                            <p>Кількість на складі: {product.stock}</p>
+                            <p>Категорія: #{product.category_id}</p>
 
                             <div className="product-actions">
                                 <button className="btn btn-success" onClick={() => addToCart(product)}>
                                     Додати до кошика</button>
-                                <button className="btn btn-outline">Повернутися до каталогу</button>
                             </div>
                         </div>
                     </div>
