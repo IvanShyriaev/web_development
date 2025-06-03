@@ -13,7 +13,7 @@ export default function CartPage() {
                 <h2>Мій кошик</h2>
 
                 {cart.length === 0 ? (
-                    <p>Кошик порожній. <Link to="/catalog">Перейти до каталогу</Link></p>
+                    <p>Кошик порожній.</p>
                 ) : (
                     <>
                         <div className="cart-list">

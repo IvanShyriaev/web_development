@@ -17,6 +17,8 @@ import ProductPage from './pages/ProductPage.jsx';
 import axios from 'axios';
 import CartPage from './pages/CartPage.jsx';
 import CheckoutPage from './pages/CheckoutPage.jsx';
+import ChatWidget from './components/ChatWidget';
+
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
@@ -55,8 +57,10 @@ function App() {
                         <Route path="/product/:id" element={<ProductPage />} />
                         <Route path="/cart" element={<CartPage />} />
                         <Route path="/checkout" element={<CheckoutPage />} />
+
                     </Routes>
                 </main>
+                <ChatWidget />
                 <Footer />
             </div>
 
